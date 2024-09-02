@@ -126,6 +126,27 @@ p.benefits-description {
   width: calc(50% - 16px);
 }
 
+.benefit-item-header {
+  display: flex;
+  align-items: center;
+}
+
+.benefit-item-header .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: #FFCE1F;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.circle .check {
+  font-size: 14px;
+  color: #302A4A;
+}
+
 p.highlighted-text,
 p.benefit-title {
   font-size: 16px;
@@ -228,30 +249,41 @@ p.input-label-secondary {
 #salary-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 77px;
+    width: 105px;
     height: 33px;
     cursor: pointer;
-    background: rgba(0, 0, 0, 0); /* Invisible */
-    border: 2px solid transparent; /* Just for ensuring the thumb size */
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid transparent;
+}
+
+#people-slider::-webkit-slider-thumb {
+  width: 77px;
 }
 
 #people-slider::-moz-range-thumb,
 #employees-percentage-slider::-moz-range-thumb,
 #pmi-cost-slider::-moz-range-thumb,
 #salary-slider::-moz-range-thumb {
-    width: 77px;
+    width: 105px;
     height: 33px;
     cursor: pointer;
-    background: rgba(0, 0, 0, 0); /* Invisible */
-    border: 2px solid transparent; /* Just for ensuring the thumb size */
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid transparent;
 }
 
-#people-thumb-value,
-#employees-percentage-thumb-value,
-#pmi-cost-thumb-value,
-#salary-thumb-value {
+#people-slider::-moz-range-thumb {
+  width: 77px;
+}
+
+#people-thumb-value-container,
+#employees-percentage-thumb-value-container,
+#pmi-cost-thumb-value-container,
+#salary-thumb-value-container {
     position: absolute;
-    width: 77px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 105px;
     height: 33px;
     background-color: #302A4A;
     font-size: 14px;
@@ -265,6 +297,20 @@ p.input-label-secondary {
     transform: translateY(-50%);
     left: 0;
     z-index: 2;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+
+#people-thumb-value-container {
+  width: 77px;
+}
+
+#people-thumb-value,
+#employees-percentage-thumb-value,
+#pmi-cost-thumb-value,
+#salary-thumb-value {
+  flex: 1;
+  text-align: center;
 }
 
 .dropdown-container {
@@ -376,4 +422,40 @@ p.input-label-secondary {
 
 .dropdown-menu li.dropdown-header:hover {
     background-color: #302A4A;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  color: #302A4A;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 12px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.vertical-lines {
+  color: #FFFFFF66;
+  margin-left: 8px;
 }
