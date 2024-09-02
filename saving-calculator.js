@@ -63,18 +63,22 @@ const regionDataMap = {
 
 const peopleSlider = document.getElementById('people-slider');
 const peopleThumbValue = document.getElementById('people-thumb-value');
+const peopleInputSection = document.getElementById('people-input-section');
 
 const employeesPercentageSlider = document.getElementById('employees-percentage-slider');
 const employeesPercentageThumbValue = document.getElementById('employees-percentage-thumb-value');
-const employeesPercentageOverlay = document.getElementById('employees-percentage-overlay');
+const employeesPercentageInputSection = document.getElementById('employees-percentage-input-section');
+let isHoveringEmployees = false;
 
 const pmiCostSlider = document.getElementById('pmi-cost-slider');
 const pmiCostThumbValue = document.getElementById('pmi-cost-thumb-value');
-const pmiCostOverlay = document.getElementById('pmi-cost-overlay');
+const pmiCostInputSection = document.getElementById('pmi-cost-input-section');
+let isHoveringPmiCost = false;
 
 const salarySlider = document.getElementById('salary-slider');
 const salaryThumbValue = document.getElementById('salary-thumb-value');
-const salaryOverlay = document.getElementById('salary-overlay');
+const salaryInputSection = document.getElementById('salary-input-section');
+let isHoveringSalary = false;
 
 const estimatedAmount = document.getElementById('estimated-amount');
 const currencySymbol = document.getElementById('currency-symbol');
@@ -87,13 +91,8 @@ const selectedIndustry =  document.getElementById('selectedIndustry');
 
 function updatePeopleSliderValue() {
   const value = peopleSlider.value;
-  peopleThumbValue.textContent = value;
   
-  if (value == 11000) {
-    peopleThumbValue.textContent = "10000+";
-  } else {
-     peopleThumbValue.textContent = `${value}`;
-  }
+  peopleThumbValue.textContent = value == 11000 ? "10000+" : value;
 
   const min = peopleSlider.min;
   const max = peopleSlider.max;
@@ -104,17 +103,23 @@ function updatePeopleSliderValue() {
   const percentage = (value - min) / (max - min);
   const position = percentage * (sliderWidth - thumbWidth);
 
+  peopleInputSection.style.backgroundColor = '#F3F2F4';
+  peopleInputSection.style.opacity = 1;
+  peopleInputSection.style.border = 'none';
   peopleThumbValue.style.left = `${position}px`;
 }
 
 function updateEmployeesPercentageSliderValue() {
   const value = employeesPercentageSlider.value;
   
-  if (value == -1) {
-    employeesPercentageThumbValue.textContent = "Don't know";
-  } else {
-    employeesPercentageThumbValue.textContent = `${value}%`;
-  }
+  employeesPercentageThumbValue.textContent = value == -1 ? "Don't know" : `${value}%`;
+    
+  const hasOverlay = isHoveringEmployees ? 0 : value == -1 ? 1 : 0;
+  const backgroundColor = hasOverlay ? '#FFF' : '#F3F2F4';
+  const opacity = hasOverlay ? 0.5 : 1;
+
+  employeesPercentageInputSection.style.backgroundColor = backgroundColor;
+  employeesPercentageInputSection.style.opacity = opacity;
   
   const min = employeesPercentageSlider.min;
   const max = employeesPercentageSlider.max;
@@ -127,19 +132,21 @@ function updateEmployeesPercentageSliderValue() {
   const percentage = (value == -1 ? 0 : (value - min) /         (max - min));
   const position = percentage * (sliderWidth - thumbWidth);
 
-  employeesPercentageThumbValue.style.left =
-    `${position}px`;
+  employeesPercentageThumbValue.style.left = `${position}px`;
 }
 
 function updatePmiCostSliderValue() {
   const value = pmiCostSlider.value;
   const region = regionDataMap[selectedRegion.innerText];
   
-  if (value == (region.customMinPmiCost - 100)) {
-    pmiCostThumbValue.textContent = "Don't know";
-  } else {
-    pmiCostThumbValue.textContent = `${value}`;
-  }
+  pmiCostThumbValue.textContent = value == (region.customMinPmiCost - 100) ? "Don't know" : value;
+  
+  const hasOverlay = isHoveringPmiCost ? 0 : value == (region.customMinPmiCost - 100) ? 1 : 0;
+  const backgroundColor = hasOverlay ? '#FFF' : '#F3F2F4';
+  const opacity = hasOverlay ? 0.5 : 1;
+  
+  pmiCostInputSection.style.backgroundColor = backgroundColor;
+  pmiCostInputSection.style.opacity = opacity;
   
   const min = pmiCostSlider.min;
   const max = pmiCostSlider.max;
@@ -157,11 +164,14 @@ function updateSalarySliderValue() {
   const value = salarySlider.value;
   const region = regionDataMap[selectedRegion.innerText];
   
-  if (value == (region.customMinSalary - 250)) {
-    salaryThumbValue.textContent = "Don't know";
-  } else {
-    salaryThumbValue.textContent = `${value}`;
-  }
+  salaryThumbValue.textContent = value == (region.customMinSalary - 250) ? "Don't know" : value;
+  
+  const hasOverlay = isHoveringSalary ? 0 : value == (region.customMinSalary - 250) ? 1 : 0;
+  const backgroundColor = hasOverlay ? '#FFF' : '#F3F2F4';
+  const opacity = hasOverlay ? 0.5 : 1;
+  
+  salaryInputSection.style.backgroundColor = backgroundColor;
+  salaryInputSection.style.opacity = opacity;
   
   const min = salarySlider.min;
   const max = salarySlider.max;
@@ -185,15 +195,39 @@ employeesPercentageSlider.addEventListener('input', () => {
   updateEmployeesPercentageSliderValue();
   updateEstimateAndCurrency();
 });
+employeesPercentageInputSection.addEventListener('mouseenter', () => {
+  isHoveringEmployees = true;
+  updateEmployeesPercentageSliderValue();
+});
+employeesPercentageInputSection.addEventListener('mouseleave', () => {
+  isHoveringEmployees = false;
+  updateEmployeesPercentageSliderValue();
+});
 
 pmiCostSlider.addEventListener('input', () => {
   updatePmiCostSliderValue();
   updateEstimateAndCurrency();
 });
+pmiCostInputSection.addEventListener('mouseenter', () => {
+  isHoveringPmiCost = true;
+  updatePmiCostSliderValue();
+});
+pmiCostInputSection.addEventListener('mouseleave', () => {
+  isHoveringPmiCost = false;
+  updatePmiCostSliderValue();
+});
 
 salarySlider.addEventListener('input', () => {
   updateSalarySliderValue();
   updateEstimateAndCurrency();
+});
+salaryInputSection.addEventListener('mouseenter', () => {
+  isHoveringSalary = true;
+  updateSalarySliderValue();
+});
+salaryInputSection.addEventListener('mouseleave', () => {
+  isHoveringSalary = false;
+  updateSalarySliderValue();
 });
 
 regionButton.addEventListener('click', () => toggleDropdown(regionMenu));
@@ -201,7 +235,10 @@ regionButton.addEventListener('click', () => toggleDropdown(regionMenu));
 industryButton.addEventListener('click', () => toggleDropdown(industryMenu));
 
 regionMenu.addEventListener('click', (event) => {
-  if (event.target.classList.contains('dropdown-header')) {
+  if (event.target.classList.contains('dropdown-header') ||
+      event.target.classList.contains('title') ||
+      event.target.classList.contains('arrow')
+  ) {
     toggleDropdown(regionMenu);
     return;
   }
@@ -213,7 +250,10 @@ regionMenu.addEventListener('click', (event) => {
 });
 
 industryMenu.addEventListener('click', (event) => {
-  if (event.target.classList.contains('dropdown-header')) {
+  if (event.target.classList.contains('dropdown-header') ||
+      event.target.classList.contains('title') ||
+      event.target.classList.contains('arrow')
+  ) {
     toggleDropdown(industryMenu);
     return;
   }
