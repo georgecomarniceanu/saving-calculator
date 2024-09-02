@@ -62,20 +62,24 @@ const regionDataMap = {
 };
 
 const peopleSlider = document.getElementById('people-slider');
+const peopleThumbValueContainer = document.getElementById('people-thumb-value-container');
 const peopleThumbValue = document.getElementById('people-thumb-value');
 const peopleInputSection = document.getElementById('people-input-section');
 
 const employeesPercentageSlider = document.getElementById('employees-percentage-slider');
+const employeesPercentageThumbValueContainer = document.getElementById('employees-percentage-thumb-value-container');
 const employeesPercentageThumbValue = document.getElementById('employees-percentage-thumb-value');
 const employeesPercentageInputSection = document.getElementById('employees-percentage-input-section');
 let isHoveringEmployees = false;
 
 const pmiCostSlider = document.getElementById('pmi-cost-slider');
+const pmiCostThumbValueContainer = document.getElementById('pmi-cost-thumb-value-container');
 const pmiCostThumbValue = document.getElementById('pmi-cost-thumb-value');
 const pmiCostInputSection = document.getElementById('pmi-cost-input-section');
 let isHoveringPmiCost = false;
 
 const salarySlider = document.getElementById('salary-slider');
+const salaryThumbValueContainer = document.getElementById('salary-thumb-value-container');
 const salaryThumbValue = document.getElementById('salary-thumb-value');
 const salaryInputSection = document.getElementById('salary-input-section');
 let isHoveringSalary = false;
@@ -98,7 +102,7 @@ function updatePeopleSliderValue() {
   const max = peopleSlider.max;
 
   const sliderWidth = peopleSlider.offsetWidth;
-  const thumbWidth = peopleThumbValue.offsetWidth;
+  const thumbWidth = peopleThumbValueContainer.offsetWidth;
 
   const percentage = (value - min) / (max - min);
   const position = percentage * (sliderWidth - thumbWidth);
@@ -106,7 +110,7 @@ function updatePeopleSliderValue() {
   peopleInputSection.style.backgroundColor = '#F3F2F4';
   peopleInputSection.style.opacity = 1;
   peopleInputSection.style.border = 'none';
-  peopleThumbValue.style.left = `${position}px`;
+  peopleThumbValueContainer.style.left = `${position}px`;
 }
 
 function updateEmployeesPercentageSliderValue() {
@@ -127,12 +131,12 @@ function updateEmployeesPercentageSliderValue() {
   const sliderWidth =   
     employeesPercentageSlider.offsetWidth;
   const thumbWidth = 
-    employeesPercentageThumbValue.offsetWidth;
+    employeesPercentageThumbValueContainer.offsetWidth;
   
   const percentage = (value == -1 ? 0 : (value - min) /         (max - min));
   const position = percentage * (sliderWidth - thumbWidth);
 
-  employeesPercentageThumbValue.style.left = `${position}px`;
+  employeesPercentageThumbValueContainer.style.left = `${position}px`;
 }
 
 function updatePmiCostSliderValue() {
@@ -152,12 +156,12 @@ function updatePmiCostSliderValue() {
   const max = pmiCostSlider.max;
   
   const sliderWidth = pmiCostSlider.offsetWidth;
-  const thumbWidth = pmiCostThumbValue.offsetWidth;
+  const thumbWidth = pmiCostThumbValueContainer.offsetWidth;
   
   const percentage = (value == (region.customMinPmiCost - 100) ? 0 : (value - min) / (max - min));
   const position = percentage * (sliderWidth - thumbWidth);
 
-  pmiCostThumbValue.style.left = `${position}px`;
+  pmiCostThumbValueContainer.style.left = `${position}px`;
 }
 
 function updateSalarySliderValue() {
@@ -177,12 +181,12 @@ function updateSalarySliderValue() {
   const max = salarySlider.max;
   
   const sliderWidth = salarySlider.offsetWidth;
-  const thumbWidth = salaryThumbValue.offsetWidth;
+  const thumbWidth = salaryThumbValueContainer.offsetWidth;
   
   const percentage = (value == (region.customMinSalary - 250) ? 0 : (value - min) / (max - min));
   const position = percentage * (sliderWidth - thumbWidth);
 
-  salaryThumbValue.style.left = `${position}px`;
+  salaryThumbValueContainer.style.left = `${position}px`;
 }
 
 peopleSlider.addEventListener('input', () => {
