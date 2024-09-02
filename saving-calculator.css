@@ -165,14 +165,37 @@ p.benefit-text {
 
 .input-section {
   position: relative;
-  background-color: #F3F2F4;
+  background-color: #FFF;
+  opacity: 0.5;
+  border: 2px solid #F3F2F4;
   border-radius: 8px;
   padding: 16px;
   margin-top: 16px;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid #F3F2F4;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+  pointer-events: all;
+}
+
 .input-section:hover .overlay {
   opacity: 0;
+}
+
+.overlay.hidden {
+  display: none;
+  pointer-events: none;
 }
 
 .slider-wrapper {
@@ -275,9 +298,11 @@ p.input-label-secondary {
   margin-top: 16px;
   position: relative;
   z-index: 3;
+  gap: 16px;
 }
 
 .dropdown {
+  width: 100%;
   position: relative;
   z-index: 1000;
 }
@@ -288,7 +313,7 @@ p.input-label-secondary {
     padding: 16px 16px 24px 16px;
     font-size: 16px;
     color: #3c3c50;
-    width: 224px;
+    width: 100%;
     height: 82px;
     text-align: left;
     cursor: pointer;
@@ -344,7 +369,6 @@ p.input-label-secondary {
   align-items: center;
   padding: 16px;
   background-color: #302A4A;
-  cursor: default;
   text-transform: uppercase;
 }
 
