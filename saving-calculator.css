@@ -329,7 +329,6 @@ p.input-label-secondary {
     background-color: #302A4A;
     border: 1px solid #ccc;
     width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     z-index: 1000;
     list-style-type: none;
