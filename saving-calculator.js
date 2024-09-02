@@ -201,6 +201,10 @@ regionButton.addEventListener('click', () => toggleDropdown(regionMenu));
 industryButton.addEventListener('click', () => toggleDropdown(industryMenu));
 
 regionMenu.addEventListener('click', (event) => {
+  if (event.target.classList.contains('dropdown-header')) {
+    toggleDropdown(regionMenu);
+    return;
+  }
   const selection = event.target.innerText;
   selectedRegion.innerText = selection;
   toggleDropdown(regionMenu);
@@ -209,6 +213,10 @@ regionMenu.addEventListener('click', (event) => {
 });
 
 industryMenu.addEventListener('click', (event) => {
+  if (event.target.classList.contains('dropdown-header')) {
+    toggleDropdown(industryMenu);
+    return;
+  }
   const selection = event.target.innerText;
   selectedIndustry.innerText = selection;
   toggleDropdown(industryMenu);
