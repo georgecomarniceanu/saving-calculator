@@ -1,0 +1,342 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DAD5D9CC;
+}
+
+.calculator-container {
+  display: flex;
+  width: 1120px;
+  height: 1100px;
+  background-color: #FFF;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.left-panel {
+  width: 544px;
+  height: 1100px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.right-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 576px;
+  height: 1100px;
+  background-color: #302A4A;
+  padding: 60px 40px 40px 40px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -1.2px;
+  margin: 0;
+  padding: 0;
+}
+
+h1.title-primary {
+  color: #302A4A;
+}
+
+h1.title-secondary {
+  color: #CA3D2A;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  letter-spacing: -0.48px;
+  color: #302A4A;
+  margin: 0;
+  padding: 0;
+}
+
+p.description {
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+
+p.instruction {
+  margin-bottom: 24px;
+}
+
+p.title-highlight {
+  color: #FFCE1F;
+  margin-bottom: 1px;
+}
+
+h1.title-estimate {
+  font-size: 32px;
+  color: #FFF;
+}
+
+p.description-secondary {
+  width: 60%;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 16.8px;
+  letter-spacing: -0.42px;
+  color: #FFF;
+  opacity: 0.48;
+  margin-top: 5px;
+}
+
+img {
+  margin-top: 12px;
+}
+
+p.additional-benefits {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 11px;
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+  color: #FFF;
+  opacity: 0.5;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+p.benefits-description {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  letter-spacing: -0.48px;
+  color: #FFF;
+  margin-bottom: 8px;
+}
+
+.benefits-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.benefit-item {
+  width: calc(50% - 16px);
+}
+
+p.highlighted-text,
+p.benefit-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFCE1F;
+  line-height: 120%;
+  letter-spacing: -0.48px;
+}
+
+p.highlighted-text {
+  margin-top: 32px;
+}
+
+p.benefit-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFF;
+  line-height: 120%;
+  letter-spacing: -0.48px;
+  margin-top: 4px;
+}
+
+.btn-request-demo {
+  width: fit-content;
+  background-color: #CF4633;
+  border-radius: 100px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: -0.28px;
+  color: #FFF;
+  padding: 16px 40px;
+  margin-top: auto;
+  cursor: pointer;
+}
+
+.input-section {
+  position: relative;
+  background-color: #F3F2F4;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.input-section:hover .overlay {
+  opacity: 0;
+}
+
+.slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+p.input-label-primary {
+  font-size: 14px;
+  font-weight: 700;
+  color: #302A4A;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+p.input-label-secondary {
+  font-size: 14px;
+  font-weight: 700;
+  color: #302A4A;
+  opacity: 0.5;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+#people-slider,
+#employees-percentage-slider,
+#pmi-cost-slider,
+#salary-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 16px;
+  background: #CFCED4;
+  border-radius: 5px;
+  outline: none;
+  opacity: 0.4;
+  transition: opacity .15s ease-in-out;
+  position: relative;
+  z-index: 1;
+  padding: 0px;
+  margin: 0px;
+}
+
+#people-slider::-webkit-slider-thumb,
+#employees-percentage-slider::-webkit-slider-thumb,
+#pmi-cost-slider::-webkit-slider-thumb,
+#salary-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 77px;
+    height: 33px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0); /* Invisible */
+    border: 2px solid transparent; /* Just for ensuring the thumb size */
+}
+
+#people-slider::-moz-range-thumb,
+#employees-percentage-slider::-moz-range-thumb,
+#pmi-cost-slider::-moz-range-thumb,
+#salary-slider::-moz-range-thumb {
+    width: 77px;
+    height: 33px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0); /* Invisible */
+    border: 2px solid transparent; /* Just for ensuring the thumb size */
+}
+
+#people-thumb-value,
+#employees-percentage-thumb-value,
+#pmi-cost-thumb-value,
+#salary-thumb-value {
+    position: absolute;
+    width: 77px;
+    height: 33px;
+    background-color: #302A4A;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    line-height: 33px;
+    border-radius: 5px;
+    pointer-events: none;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 2;
+}
+
+.dropdown-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.dropdown {
+  position: relative;
+  z-index: 1000;
+}
+
+.dropdown-button {
+    background-color: #F3F2F4;
+    border: none;
+    padding: 16px 16px 24px 16px;
+    font-size: 16px;
+    color: #3c3c50;
+    width: 224px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.dropdown-label-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 12px;
+    color: #302A4A;
+    opacity: 0.5;
+}
+
+.dropdown-selected {
+    font-size: 16px;
+    font-weight: 600;
+    color: #302A4A;
+    margin-top: 8px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    font-size: 18px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
+}
