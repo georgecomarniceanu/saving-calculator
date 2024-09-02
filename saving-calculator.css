@@ -2,7 +2,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #DAD5D9CC;
+  background-color: red;
 }
 
 .calculator-container {
