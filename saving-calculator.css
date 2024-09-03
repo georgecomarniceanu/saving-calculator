@@ -250,7 +250,7 @@ p.input-label-secondary {
 #salary-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 105px;
+    width: 110px;
     height: 33px;
     cursor: pointer;
     background: rgba(0, 0, 0, 0);
@@ -265,7 +265,7 @@ p.input-label-secondary {
 #employees-percentage-slider::-moz-range-thumb,
 #pmi-cost-slider::-moz-range-thumb,
 #salary-slider::-moz-range-thumb {
-    width: 105px;
+    width: 110px;
     height: 33px;
     cursor: pointer;
     background: rgba(0, 0, 0, 0);
@@ -284,7 +284,7 @@ p.input-label-secondary {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 105px;
+    width: 110px;
     height: 33px;
     background-color: #302A4A;
     font-size: 14px;
@@ -344,7 +344,6 @@ p.input-label-secondary {
     justify-content: center;
     align-items: flex-start;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
