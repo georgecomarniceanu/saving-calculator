@@ -386,7 +386,9 @@ p.input-label-secondary {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    max-height: 450px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .dropdown-menu li {
@@ -394,6 +396,19 @@ p.input-label-secondary {
     font-size: 16px;
     padding: 8px 16px;
     cursor: pointer;
+}
+
+.dropdown-menu::-webkit-scrollbar {
+    width: 4px; /* Width of the scrollbar */
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+    background-color: #FAF6F4; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the scrollbar thumb */
+}
+
+.dropdown-menu::-webkit-scrollbar-track {
+    background-color: #302A4A; /* Color of the scrollbar track */
 }
 
 .dropdown-menu li:hover {
