@@ -91,7 +91,7 @@ p.description-secondary {
   margin-top: 5px;
 }
 
-img {
+.csc-visual-teaser-visible {
   margin-top: -100px;
 }
 
@@ -393,7 +393,7 @@ p.input-label-secondary {
 
 .dropdown-menu li {
     color: #FAF6F4;
-    font-size: 16px;
+    font-size: 14px;
     padding: 8px 16px;
     cursor: pointer;
 }
