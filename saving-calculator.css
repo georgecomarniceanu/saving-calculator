@@ -132,6 +132,7 @@ p.benefits-description {
 }
 
 .benefit-item-header .circle {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
