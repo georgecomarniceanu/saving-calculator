@@ -8,7 +8,7 @@ body {
 .calculator-container {
   display: flex;
   width: 1120px;
-  height: 1147px;
+  height: 1047px;
   background-color: #FFF;
   box-shadow: 0px 24px 80px 0px rgba(41, 46, 59, 0.16);
   border-radius: 16px;
@@ -17,7 +17,7 @@ body {
 
 .left-panel {
   width: 544px;
-  height: 1147px;
+  height: 1047px;
   padding: 40px;
   box-sizing: border-box;
 }
@@ -27,7 +27,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 576px;
-  height: 1147px;
+  height: 1047px;
   background-color: #302A4A;
   padding: 60px 40px 40px 40px;
   box-sizing: border-box;
@@ -82,7 +82,7 @@ h1.title-estimate {
 p.description-secondary {
   width: 60%;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   font-style: italic;
   line-height: 16.8px;
   letter-spacing: -0.42px;
@@ -92,7 +92,7 @@ p.description-secondary {
 }
 
 img {
-  margin-top: 12px;
+  margin-top: -100px;
 }
 
 p.additional-benefits {
