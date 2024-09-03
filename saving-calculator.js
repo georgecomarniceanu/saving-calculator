@@ -14,7 +14,7 @@ const regionDataMap = {
     minSalary: 85000, 
     maxSalary: 90000,
     customMinSalary: 42500,
-    customMaxSalary: 13500,
+    customMaxSalary: 135000,
     pmiCost: 1000,
     customMinPmiCost: 200,
     customMaxPmiCost: 1500
@@ -54,10 +54,10 @@ const regionDataMap = {
     minSalary: 85000, 
     maxSalary: 90000,
     customMinSalary: 42500,
-    customMaxSalary: 13500,
+    customMaxSalary: 135000,
     pmiCost: 8500,
-    minPmiCost: 3700,
-    maxPmiCost: 12800
+    customMinPmiCost: 3700,
+    customMaxPmiCost: 12800
   }
 };
 
