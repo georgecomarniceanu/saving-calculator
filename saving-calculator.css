@@ -8,7 +8,7 @@ body {
 .calculator-container {
   display: flex;
   width: 1120px;
-  height: 1100px;
+  height: 1147px;
   background-color: #FFF;
   border-radius: 16px;
   overflow: hidden;
@@ -16,7 +16,7 @@ body {
 
 .left-panel {
   width: 544px;
-  height: 1100px;
+  height: 1147px;
   padding: 40px;
   box-sizing: border-box;
 }
@@ -26,7 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 576px;
-  height: 1100px;
+  height: 1147px;
   background-color: #302A4A;
   padding: 60px 40px 40px 40px;
   box-sizing: border-box;
@@ -250,7 +250,7 @@ p.input-label-secondary {
 #salary-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 110px;
+    width: 105px;
     height: 33px;
     cursor: pointer;
     background: rgba(0, 0, 0, 0);
@@ -265,7 +265,7 @@ p.input-label-secondary {
 #employees-percentage-slider::-moz-range-thumb,
 #pmi-cost-slider::-moz-range-thumb,
 #salary-slider::-moz-range-thumb {
-    width: 110px;
+    width: 105px;
     height: 33px;
     cursor: pointer;
     background: rgba(0, 0, 0, 0);
@@ -284,7 +284,7 @@ p.input-label-secondary {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 110px;
+    width: 105px;
     height: 33px;
     background-color: #302A4A;
     font-size: 14px;
@@ -344,6 +344,7 @@ p.input-label-secondary {
     justify-content: center;
     align-items: flex-start;
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
@@ -434,12 +435,12 @@ p.input-label-secondary {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 220px;
-  background-color: #555;
+  width: 160px;
+  background-color: #302A4A;
   color: #fff;
   text-align: center;
   border-radius: 5px;
-  padding: 5px;
+  padding: 8px 12px;
   position: absolute;
   z-index: 1;
   bottom: 125%;
@@ -447,7 +448,8 @@ p.input-label-secondary {
   margin-left: -60px;
   opacity: 0;
   transition: opacity 0.3s;
-  font-size: 12px;
+  font-size: 10px;
+  font-style: normal;
 }
 
 .tooltip:hover .tooltiptext {
