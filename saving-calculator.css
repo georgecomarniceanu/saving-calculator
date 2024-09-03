@@ -10,9 +10,10 @@ body {
   width: 1120px;
   height: 1147px;
   background-color: #FFF;
+  box-shadow: 0px 24px 80px 0px rgba(41, 46, 59, 0.16);
   border-radius: 16px;
   overflow: hidden;
-}
+} 
 
 .left-panel {
   width: 544px;
@@ -183,6 +184,11 @@ p.benefit-text {
   padding: 16px 40px;
   margin-top: auto;
   cursor: pointer;
+}
+
+.btn-request-demo:hover {
+  background-color: #FFF;
+  color: #302A4A;
 }
 
 .input-section {
