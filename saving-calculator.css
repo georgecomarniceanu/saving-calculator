@@ -481,3 +481,157 @@ p.input-label-secondary {
   color: #FFFFFF66;
   margin-left: 8px;
 }
+
+@media screen and (max-width: 768px) {
+  .calculator-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    background-color: #FFF;
+    box-shadow: 0px 24px 80px 0px rgba(41, 46, 59, 0.16);
+    border-radius: 16px;
+    overflow: hidden;
+  } 
+  
+  .left-panel {
+    width: 100%;
+    height: fit-content;
+    padding: 24px;
+  }
+  .right-panel {
+    width: 100%;
+    height: fit-content;
+    padding: 40px 24px 24px 24px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  
+  p {
+    font-size: 14px;
+    line-height: 16.4px;
+  }
+  
+  p.description {
+    margin-bottom: 8px;
+  }
+  
+  p.instruction {
+    margin-bottom: 16px;
+  }
+
+  h1.title-estimate {
+    font-size: 28px;
+  }
+
+  p.benefits-description {
+    font-size: 14px;
+    line-height: 16.4px;
+  }
+
+  .benefits-grid {
+    gap: 16px;
+    margin-top: 12px;
+    margin-bottom: 32px;
+  }
+
+  .benefit-item {
+    width: 100%;
+  }
+
+  .benefit-item-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .benefit-item-header .circle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: #FFCE1F;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+  .check {
+    font-size: 14px;
+    color: #302A4A;
+  }
+
+  p.highlighted-text,
+  p.benefit-title {
+    font-size: 14px;
+  }
+
+  p.highlighted-text {
+    margin-top: 16px;
+  }
+
+  p.benefit-text {
+    font-size: 14px;
+  }
+
+  .btn-request-demo {
+    align-self: center;
+  }
+  
+  .dropdown-container {
+    flex-direction: column;
+  }
+  
+  .dropdown {
+    z-index: 20;
+  }
+
+  .dropdown-menu {
+    max-height: 250px;
+  }
+
+  p.input-label-primary {
+    font-size: 12px;
+  }
+
+  p.input-label-secondary {
+    font-size: 12px;
+  }
+
+  #people-slider::-webkit-slider-thumb,
+  #employees-percentage-slider::-webkit-slider-thumb,
+  #pmi-cost-slider::-webkit-slider-thumb,
+  #salary-slider::-webkit-slider-thumb {
+    width: 95px;
+  }
+
+  #people-slider::-webkit-slider-thumb {
+    width: 65px;
+  }
+
+  #people-slider::-moz-range-thumb,
+  #employees-percentage-slider::-moz-range-thumb,
+  #pmi-cost-slider::-moz-range-thumb,
+  #salary-slider::-moz-range-thumb {
+    width: 95px;
+  }
+
+  #people-slider::-moz-range-thumb {
+    width: 65px;
+  }
+
+  #people-thumb-value-container,
+  #employees-percentage-thumb-value-container,
+  #pmi-cost-thumb-value-container,
+  #salary-thumb-value-container {
+    width: 95px;
+    font-size: 12px;
+  }
+
+  #people-thumb-value-container {
+    width: 65px;
+  }
+}
