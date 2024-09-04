@@ -298,7 +298,6 @@ p.input-label-secondary {
 .dropdown {
   width: 100%;
   position: relative;
-  z-index: 1000;
 }
 
 .dropdown-button {
@@ -317,6 +316,7 @@ p.input-label-secondary {
     align-items: flex-start;
     border-radius: 8px;
     position: relative;
+    z-index: 10;
 }
 
 .dropdown-label-wrapper {
@@ -362,6 +362,7 @@ p.input-label-secondary {
     font-size: 14px;
     padding: 8px 16px;
     cursor: pointer;
+    z-index: 1000;
 }
 
 .dropdown-menu::-webkit-scrollbar {
@@ -527,10 +528,6 @@ p.input-label-secondary {
   
   .dropdown-container {
     flex-direction: column;
-  }
-  
-  .dropdown {
-    z-index: 20;
   }
 
   .dropdown-menu {
