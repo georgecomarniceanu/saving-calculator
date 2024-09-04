@@ -15,24 +15,6 @@ body {
   overflow: hidden;
 } 
 
-.left-panel {
-  width: 544px;
-  height: 1047px;
-  padding: 40px;
-  box-sizing: border-box;
-}
-
-.right-panel {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 576px;
-  height: 1047px;
-  background-color: #302A4A;
-  padding: 60px 40px 40px 40px;
-  box-sizing: border-box;
-}
-
 h1 {
   font-size: 40px;
   font-weight: 600;
@@ -493,17 +475,6 @@ p.input-label-secondary {
     border-radius: 16px;
     overflow: hidden;
   } 
-  
-  .left-panel {
-    width: 100%;
-    height: fit-content;
-    padding: 24px;
-  }
-  .right-panel {
-    width: 100%;
-    height: fit-content;
-    padding: 40px 24px 24px 24px;
-  }
   
   h1 {
     font-size: 32px;
