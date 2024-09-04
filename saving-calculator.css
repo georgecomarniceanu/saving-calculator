@@ -295,11 +295,6 @@ p.input-label-secondary {
   gap: 16px;
 }
 
-.dropdown {
-  width: 100%;
-  position: relative;
-}
-
 .dropdown-button {
     background-color: #F3F2F4;
     border: none;
