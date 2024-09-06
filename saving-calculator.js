@@ -269,7 +269,7 @@ industryMenu.addEventListener('click', (event) => {
 });
 
 demoButton[0].addEventListener('click', () => {
-  window.location.href = 'https://gojoe.webflow.io/request-a-demo';
+  window.location.href = 'https://www.gojoe.com/request-a-demo';
 });
 
 window.addEventListener('click', (event) => {
