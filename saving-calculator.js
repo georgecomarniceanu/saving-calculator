@@ -93,6 +93,8 @@ const industryMenu =  document.getElementById('industryMenu');
 const selectedRegion =  document.getElementById('selectedRegion');
 const selectedIndustry =  document.getElementById('selectedIndustry');
 
+const demoButton = document.getElementsByClassName('btn-request-demo');
+
 function updatePeopleSliderValue() {
   const value = peopleSlider.value;
   
@@ -264,6 +266,10 @@ industryMenu.addEventListener('click', (event) => {
   const selection = event.target.innerText;
   selectedIndustry.innerText = selection;
   toggleDropdown(industryMenu);
+});
+
+demoButton[0].addEventListener('click', () => {
+  window.location.href = 'https://gojoe.webflow.io/request-a-demo';
 });
 
 window.addEventListener('click', (event) => {
