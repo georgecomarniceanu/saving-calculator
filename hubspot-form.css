@@ -32,3 +32,8 @@
 .form-columns-1 {
   margin-bottom: 8px !important;
 }
+
+.no-list.hs-error-msgs {
+  color: red;
+}
+
