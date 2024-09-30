@@ -77,3 +77,7 @@
 .hs-dependent-field {
   background-color: #F3F2F4;
 }
+
+.hs-dependent-field .input {
+  background-color: #F3F2F4;
+}
