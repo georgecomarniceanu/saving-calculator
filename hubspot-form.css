@@ -16,15 +16,10 @@
 
 .hs-input {
   height: 100%;
-  width: 100%;
+  width: 100% !important;
 }
 
 .hs-input:focus {
   outline: none;
   box-shadow: none;
-}
-
-.form-columns-1 .input .hs-input {
-  height: 100%;
-  width: 100%;
 }
