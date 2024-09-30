@@ -73,3 +73,7 @@
   border: none;
   box-shadow: none;
 }
+
+.hs-dependent-field {
+  background-color: #F3F2F4;
+}
