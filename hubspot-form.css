@@ -34,6 +34,8 @@
 }
 
 .no-list.hs-error-msgs {
+  font-size: 12px;
+  font-weight: 600;
   color: red;
 }
 
