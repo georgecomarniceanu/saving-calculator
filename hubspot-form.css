@@ -64,6 +64,10 @@
   flex-direction: row-reverse;
 }
 
-.hs-dependent-field .input  {
+.hs-dependent-field .hs-input {
+  height: 100%;
+  width: 100%;
+  padding: 8px 12px;
   border: none;
+  box-shadow: none;
 }
