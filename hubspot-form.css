@@ -18,10 +18,13 @@
   height: 100%;
   width: 100% !important;
   padding: 8px 12px;
+  border: 1px solid #ccc;
+  box-shadow: none;
 }
 
 .hs-input:focus {
   outline: none;
+  border: 1px solid #000;
   box-shadow: none;
 }
 
