@@ -58,3 +58,8 @@
   margin-top: auto;
   cursor: pointer;
 }
+
+.hs-form-checkbox-display {
+  display: flex;
+  flex-direction: row-reverse;
+}
