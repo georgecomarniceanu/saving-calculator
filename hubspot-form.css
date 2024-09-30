@@ -67,6 +67,7 @@
 .hs-dependent-field .hs-input {
   height: 100%;
   width: 100%;
+  background-color: transparent;
   padding: 8px 12px;
   border: none;
   box-shadow: none;
