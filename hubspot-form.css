@@ -47,14 +47,14 @@
 .hs-button {
   width: fit-content;
   background-color: #CF4633;
-  border-radius: 100px;
+  border-radius: 8px;
   border: none;
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
   letter-spacing: -0.28px;
   color: #FFF;
-  padding: 16px 40px;
+  padding: 16px 32px;
   margin-top: auto;
   cursor: pointer;
 }
