@@ -8,6 +8,7 @@
 .input {
   width: 100%;
   border: none !important;
+  box-shadow: none;
   margin: 0;
   margin-bottom: 4px;
 }
