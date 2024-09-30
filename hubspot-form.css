@@ -58,8 +58,3 @@
   margin-top: auto;
   cursor: pointer;
 }
-
-.hs-button:hover {
-  background-color: #FFF;
-  color: #302A4A;
-}
