@@ -25,9 +25,9 @@
 }
 
 .form-columns-2 {
-  margin-bottom: 8px;
+  margin-bottom: 8px !important;
 }
 
 .form-columns-1 {
-  margin-bottom: 8px;
+  margin-bottom: 8px !important;
 }
