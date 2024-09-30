@@ -64,20 +64,3 @@
   display: flex;
   flex-direction: row-reverse;
 }
-
-.hs-dependent-field .hs-input {
-  height: 100%;
-  width: 100%;
-  background-color: transparent;
-  padding: 8px 12px;
-  border: none;
-  box-shadow: none;
-}
-
-.hs-dependent-field {
-  background-color: #F3F2F4;
-}
-
-.hs-dependent-field .input {
-  background-color: #F3F2F4;
-}
