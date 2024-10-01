@@ -93,3 +93,7 @@
 input[type="checkbox"]:checked {
   accent-color: green;
 }
+
+.hs_error_rollup {
+  margin-bottom: 20px;
+}
