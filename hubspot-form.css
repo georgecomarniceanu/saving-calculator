@@ -19,7 +19,6 @@
 }
 
 .hs-input {
-  height: 100%;
   width: 100% !important;
   padding: 8px 12px;
   border: 1px solid #ccc;
@@ -96,9 +95,4 @@ input[type="checkbox"]:checked {
 
 .hs_error_rollup {
   margin-bottom: 20px;
-}
-
-select.hs-input:focus {
-  background-color: red; /* Red background when focused or opened */
-  color: white; /* Optional: make text white for better contrast */
 }
