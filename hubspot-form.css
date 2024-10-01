@@ -63,7 +63,11 @@
 }
 
 .hs_i_am_looking_to_help_my_organisation_ {
-  height: 250px;
+  height: 240px;
+}
+
+.hs_i_am_looking_to_help_my_organisation_ .input {
+  height: fit-content;
 }
 
 .inputs-list {
