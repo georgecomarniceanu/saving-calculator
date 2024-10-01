@@ -68,6 +68,7 @@
 
 .inputs-list {
   list-style-type: none;
+  padding-left: 10px;
 }
 
 .hs-form-checkbox-display {
