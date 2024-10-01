@@ -99,6 +99,6 @@ input[type="checkbox"]:checked {
   margin-bottom: 20px;
 }
 
-select.hs-input {
-  background-color: transparent;
+select {
+  background-color: #FFF;
 }
