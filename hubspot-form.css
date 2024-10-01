@@ -76,5 +76,5 @@
 }
 
 .hs-form-checkbox .hs-input {
-  width: fit-content;
+  width: fit-content !important;
 }
