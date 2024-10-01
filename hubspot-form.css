@@ -96,16 +96,3 @@ input[type="checkbox"]:checked {
 .hs_error_rollup {
   margin-bottom: 20px;
 }
-
-select.hs-input::after {
-  content: '';
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  border: solid black;
-  border-width: 0 2px 2px 0;
-  padding: 5px;
-  transform: rotate(45deg);
-  pointer-events: none;
-}
