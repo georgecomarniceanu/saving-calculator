@@ -74,3 +74,7 @@
   display: flex;
   flex-direction: row;
 }
+
+.hs-form-checkbox .hs-input {
+  width: fit-content;
+}
