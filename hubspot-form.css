@@ -6,6 +6,10 @@
   margin-bottom: 8px !important;
 }
 
+.form-columns-1 {
+  margin-bottom: 8px !important;
+}
+
 .input {
   width: 100%;
   border: none !important;
@@ -28,10 +32,6 @@
   border: 1px solid #000;
   border-radius: 4px;
   box-shadow: none;
-}
-
-.form-columns-1 {
-  margin-bottom: 8px !important;
 }
 
 .no-list.hs-error-msgs {
