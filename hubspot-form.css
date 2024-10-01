@@ -85,3 +85,7 @@
   display: flex;
   align-items: center;
 }
+
+input[type="checkbox"]:checked {
+  accent-color: green;
+}
