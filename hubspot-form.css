@@ -69,3 +69,8 @@
 .inputs-list {
   list-style-type: none;
 }
+
+.hs-form-checkbox-display {
+  display: flex;
+  flex-direction: row;
+}
