@@ -77,4 +77,10 @@
 
 .hs-form-checkbox .hs-input {
   width: fit-content !important;
+  margin-right: 8px;
+}
+
+.hs-form-checkbox-display {
+  display: flex;
+  align-items: center;
 }
