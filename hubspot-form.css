@@ -98,3 +98,7 @@ input[type="checkbox"]:checked {
 .hs_error_rollup {
   margin-bottom: 20px;
 }
+
+select.hs-input {
+  background-color: transparent;
+}
