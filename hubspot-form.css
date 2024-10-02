@@ -58,8 +58,8 @@
   cursor: pointer;
 }
 
-.hs-button {
-  background-color: #CF4633;
+.hs-button:hover {
+  background-color: #2F3542;
 }
 
 .hs-form-checkbox-display {
