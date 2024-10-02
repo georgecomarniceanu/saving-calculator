@@ -23,7 +23,7 @@
   width: 100% !important;
   height: 100%;
   padding: 8px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #d5d8df;
   border-radius: 4px;
   box-shadow: none;
 }
@@ -45,7 +45,7 @@
 
 .hs-button {
   width: fit-content;
-  background-color: #CF4633;
+  background-color: #ca3d2a;
   border-radius: 8px;
   border: none;
   font-size: 14px;
@@ -56,6 +56,10 @@
   padding: 16px 32px;
   margin-top: auto;
   cursor: pointer;
+}
+
+.hs-button {
+  background-color: #CF4633;
 }
 
 .hs-form-checkbox-display {
