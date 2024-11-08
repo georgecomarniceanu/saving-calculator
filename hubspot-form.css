@@ -121,7 +121,7 @@ select {
   background-color: #FFFFFF14 !important;
 }
 
-#LPForm-form-container-dark .hs-input:focus {
+#LPForm-form-container-dark .hs-input {
   color: #FFF;
 }
 
