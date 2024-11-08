@@ -29,11 +29,6 @@
   margin-bottom: 4px;
 }
 
-#LPForm-form-container-dark .input {
-  background-color: rgba(255,255,255);
-  opacity: 0.08;
-}
-
 .hs-input {
   width: 100% !important;
   height: 100%;
@@ -41,10 +36,6 @@
   border: 1px solid #d5d8df;
   border-radius: 4px;
   box-shadow: none;
-}
-
-#LPForm-form-container-dark .hs-input {
-  color: #FFF;
 }
 
 .hs-input:focus {
