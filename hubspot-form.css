@@ -123,6 +123,10 @@ select {
   background-color: #FFF;
 }
 
+#LPForm-form-container-dark label {
+  margin-bottom: 0px;
+}
+
 #LPForm-form-container-dark .input {
   background-color: #FFFFFF14 !important;
 }
