@@ -1,7 +1,3 @@
-#LPForm-form-container-dark {
-  background-color: #302a4a;
-}
-
 .form-columns-2 {
   width: 100%;
   display: flex;
@@ -30,6 +26,11 @@
   border: 1px solid #d5d8df;
   border-radius: 4px;
   box-shadow: none;
+}
+
+#LPForm-form-container-dark .hs-input {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .hs-input:focus {
