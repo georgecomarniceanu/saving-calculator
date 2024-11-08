@@ -2,6 +2,10 @@
   background-color: #302A4A;
 }
 
+#LPForm-form-container-dark span {
+  color: #FFF;
+}
+
 .form-columns-2 {
   width: 100%;
   display: flex;
