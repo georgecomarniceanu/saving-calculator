@@ -117,6 +117,10 @@ select {
   background-color: #FFF;
 }
 
+#LPForm-form-container-dark .input {
+  background-color: #FFFFFF14 !important;
+}
+
 #LPForm-form-container-dark input {
   background-color: #FFFFFF14 !important;
 }
