@@ -2,7 +2,9 @@
   background-color: #302A4A;
 }
 
-#LPForm-form-container-dark span {
+#LPForm-form-container-dark span,
+#LPForm-form-container-dark h2,
+#LPForm-form-container-dark p {
   color: #FFF;
 }
 
