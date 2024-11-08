@@ -39,12 +39,11 @@
 }
 
 #LPForm-form-container-dark .input {
-  background-color: #FFF;
-  opacity: 0.08;
   border: 1px solid rgba(255, 255, 255, 0.4) !important;
 }
 
 #LPForm-form-container-dark .hs-input {
+  background-color: red;
   color: #FFF;
 }
 
