@@ -3,9 +3,12 @@
 }
 
 #LPForm-form-container-dark span,
-#LPForm-form-container-dark h2,
+#LPForm-form-container-dark h2 {
+  color: #FFF;
+}
 #LPForm-form-container-dark p {
   color: #FFF;
+  opacity: 0.4;
 }
 
 .form-columns-2 {
