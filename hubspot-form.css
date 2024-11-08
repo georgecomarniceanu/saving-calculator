@@ -116,3 +116,7 @@ input[type="checkbox"]:checked {
 select {
   background-color: #FFF;
 }
+
+#LPForm-form-container-dark input {
+  background-color: red !important;
+}
