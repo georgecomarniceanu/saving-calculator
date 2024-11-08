@@ -30,7 +30,8 @@
 }
 
 #LPForm-form-container-dark .input {
-  background-color: rgba(255,255,255,0.08);
+  background-color: rgba(255,255,255);
+  opacity: 0.08;
 }
 
 .hs-input {
