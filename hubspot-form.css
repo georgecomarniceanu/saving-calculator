@@ -8,7 +8,6 @@
   color: #FFF;
 }
 
-
 .form-columns-2 {
   width: 100%;
   display: flex;
@@ -41,6 +40,10 @@
 
 #LPForm-form-container-dark .hs-input {
   background-color: #FFFFFF14;
+  color: #000;
+}
+
+#LPForm-form-container-dark .hs-input::placeholder {
   color: #FFFFFF66;
 }
 
