@@ -43,6 +43,11 @@
   box-shadow: none;
 }
 
+#LPForm-form-container-dark .hs-input::placeholder {
+  color: #FFF;
+  opacity: 0.4;
+}
+
 .hs-input:focus {
   outline: none;
   border: 1px solid #000;
