@@ -2,7 +2,10 @@
   background-color: #302A4A;
 }
 
-#LPForm-form-container-dark span,
+#LPForm-form-container-dark span {
+  color: #FFF;
+  font-size: 12px;
+}
 #LPForm-form-container-dark h2,
 #LPForm-form-container-dark p {
   color: #FFF;
@@ -69,7 +72,8 @@
 }
 
 .hs-button:hover {
-  background-color: #2F3542;
+  background-color: #FFF;
+  color: #2F3542;
 }
 
 .hs-form-checkbox-display {
