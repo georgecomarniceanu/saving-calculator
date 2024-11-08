@@ -122,7 +122,12 @@ select {
 }
 
 #LPForm-form-container-dark .hs-input {
+  border: 1px solid #d5d8df; 
   color: #FFF;
+}
+
+#LPForm-form-container-dark .hs-input:focus {
+  border: 1px solid #FFF; 
 }
 
 #LPForm-form-container-dark input {
