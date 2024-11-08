@@ -38,14 +38,19 @@
   box-shadow: none;
 }
 
-#LPForm-form-container-dark .hs-input {
+#LPForm-form-container-dark .input {
   background-color: #FFF;
-  opacity: 8%;
+  opacity: 0.08;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+}
+
+#LPForm-form-container-dark .hs-input {
   color: #000;
 }
 
 #LPForm-form-container-dark .hs-input::placeholder {
-  color: #FFFFFF66;
+  color: #FFFFFF;
+  opacity: 0.4;
 }
 
 .hs-input:focus {
