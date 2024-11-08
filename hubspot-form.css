@@ -130,7 +130,3 @@ select {
 #LPForm-form-container-dark .hs-input:focus {
   border: 1px solid #FFF; 
 }
-
-#LPForm-form-container-dark input {
-  background-color: #FFFFFF14 !important;
-}
